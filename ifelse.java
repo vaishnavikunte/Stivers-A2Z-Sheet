@@ -1,4 +1,4 @@
-class Solution {
+class ifelse {
     public void studentGrade(int marks) {
         if(marks>=90){
             System.out.println("Grade A");
