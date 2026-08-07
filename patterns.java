@@ -53,8 +53,57 @@ public class patterns {
         }
     }
 
+    void pattern7(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=n;j>=i;j--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=2*i-1;j++){
+                System.out.print("*");
+            }  
+            System.out.println();      
+        }
+        
+    }
+
+    void pattern8(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=n;j>=i;j--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=2*i-1;j++){
+                System.out.print("*");
+            }  
+            System.out.println();      
+        }
+        for(int i=1;i<=n;i++){
+            
+            for(int j=1;j<=i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=2*(n-i)+1;j++){
+                System.out.print("*");
+            }
+            System.out.println();      
+        }
+        
+    }
+
+    void pattern9(int n){
+        for(int i=1;i<=n*2-1;i++){
+            int stars = i;
+            if(stars>n){
+                stars = 2*n-i;
+            }
+            for(int j=1;j<=stars;j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+
     public static void main(String[] args) {
         patterns p = new patterns();
-        p.pattern6(5);
+        p.pattern9(5);
     }
 }
